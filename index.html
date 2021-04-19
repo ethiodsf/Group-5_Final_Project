@@ -1,9 +1,119 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Group-5 Final Project
-        </title>
-        <link rel="stylesheet" href="css\styles.css">
-    </head>
+
+<head>
+    <title>
+        Group-5 Final Project
+    </title>
+
+    <link rel="stylesheet" href="css\styles.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--
+        <p class="text-uppercase display-5">Group 5 Project Members</p>
+    <table class="table table-bordered table-striped table-hover" style="width:400px">
+        <thead class="thead-light">
+
+            <tr>
+                <th>S/N</th>
+                <th>Full Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Member 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Member 2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Member 3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Member 4</td>
+            </tr>
+        </tbody>
+        -->
+    </table>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center font-weight-bold">Task List</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-left font-weight-bold">Add New Task</h4>
+            </div>
+        </div>
+
+        <form>
+            <div class="form-group row mx-auto">
+                <label for="taskname" class="font-weight-bold">Task Name</label>
+                <input type="text" id="taskname" class="form-control" name="taskname">
+
+            </div>
+            <div class="form-group row mx-auto">
+                <label for="description" class="font-weight-bold">Description</label>
+                <textarea id="description" class="form-control" name="description" rows="5" cols="50"></textarea>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-6">
+                    <label for="assignedto" class="font-weight-bold">Assign To</label>
+                    <input type="text" id="assignedto" class="form-control" name="assignedto">
+                </div>
+                <div class="col-lg-6">
+                    <label for="duedate" class="font-weight-bold">Due Date</label>
+                    <input type="date" id="duedate" class="form-control" name="duedate">
+                </div>
+            </div>
+         
+            <button type="button" class="btn btn-primary btn-lg">Add Task</button>
+        </form>
+        <br>
+        <ul class="card list-group border border-primary" style="width: 300px">
+   
+                <li class="list-group-item card-text">Task Name
+                <button class="btn btn-primary ml-5" name="status" value="status">Status</button>
+            </li> 
+                <li class="list-group-item card-text">Task Description</li>
+                <li class="list-group-item card-text">Assigned to</li>
+                <li class="list-group-item card-text">Due Date</li>
+                <li class="list-group-item card-text">Status</li>
+                
+     
+        </ul>  
+
+        <!-- <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Morbi leo risus</li>
+            <li class="list-group-item">Porta ac consectetur ac</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul> -->
+
+    </div>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
