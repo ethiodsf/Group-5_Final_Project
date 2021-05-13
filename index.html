@@ -45,10 +45,10 @@
         -->
     </table>
 
-    <div class="container-fluid">
+    <div class="container-fluid pt-3">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center font-weight-bold">Task List</h1>
+                <h1 class="text-center font-weight-bold mb-4">Task List</h1>
             </div>
         </div>
         <div class="row">
@@ -60,25 +60,30 @@
         <form>
             <div class="form-group row mx-auto">
                 <label for="taskname" class="font-weight-bold">Task Name</label>
-                <input type="text" id="taskname" class="form-control" name="taskname">
-
+                <input type="text" id="taskname" class="form-control" name="taskname" required>
+                
             </div>
             <div class="form-group row mx-auto">
                 <label for="description" class="font-weight-bold">Description</label>
-                <textarea id="description" class="form-control" name="description" rows="5" cols="50"></textarea>
+                <textarea id="description" class="form-control" name="description" rows="5" cols="50" required></textarea>
             </div>
             <div class="form-group row">
                 <div class="col-lg-6">
                     <label for="assignedto" class="font-weight-bold">Assign To</label>
-                    <input type="text" id="assignedto" class="form-control" name="assignedto">
+                    <input type="text" id="assignedto" class="form-control" name="assignedto" required>
                 </div>
                 <div class="col-lg-6">
                     <label for="duedate" class="font-weight-bold">Due Date</label>
-                    <input type="date" id="duedate" class="form-control" name="duedate">
+                    <input type="date" id="duedate" class="form-control" name="duedate" required>
                 </div>
             </div>
-         
+            <div class="alert alert-danger alert-dismissible fade" role="alert">
+                something went wrong, please check your inputs!
+                <button type="button" data-dismiss="alert" class="close btn btn-primary btn-lg">Close</button>
+              </div>
             <button type="button" class="btn btn-primary btn-lg">Add Task</button>
+            <button type="button" class="btn btn-primary btn-lg">Submit</button>
+            
         </form>
         <br>
         <ul class="card list-group border border-primary" style="width: 300px">
@@ -105,6 +110,7 @@
     </div>
     
     <!-- Latest compiled JavaScript -->
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -114,6 +120,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script src="./index.js"> </script>
 </body>
 
 </html>
