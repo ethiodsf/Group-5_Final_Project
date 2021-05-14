@@ -57,7 +57,7 @@
             </div>
         </div>
 
-        <form>
+        <form id = "myForm" name="myForm" method="post">
             <div class="form-group row mx-auto">
                 <label for="taskname" class="font-weight-bold">Task Name</label>
                 <input type="text" id="taskname" class="form-control" name="taskname" required>
@@ -79,10 +79,10 @@
             </div>
             <div class="alert alert-danger alert-dismissible fade" role="alert">
                 something went wrong, please check your inputs!
-                <button type="button" data-dismiss="alert" class="close btn btn-primary btn-lg">Close</button>
+                <button type="button" data-dismiss="alert" class="show btn btn-primary btn-lg">Close</button>
               </div>
-            <button type="button" class="btn btn-primary btn-lg">Add Task</button>
-            <button type="button" class="btn btn-primary btn-lg">Submit</button>
+            <button type="submit" class="btn btn-primary btn-lg">Add Task</button>
+            
             
         </form>
         <br>
