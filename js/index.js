@@ -50,3 +50,10 @@ function submitClick(event) {
 
 myForm.addEventListener('submit', submitClick);
 
+const tasks = new TaskManager();
+tasks.addTask('Cook Dinner',
+'Prepare a healthy serving of pancakes for the family tonight',
+'Nick',
+'2020-09-20',
+'TODO')
+console.log(tasks.tasks);
